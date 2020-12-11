@@ -1,0 +1,50 @@
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+
+.pagination {
+  border-bottom: 0.1rem solid rgba(235, 235, 235, 0.55);
+  @include for-size(tablet-portrait-up) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  @include for-size(phone-only) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .ctspa {
+    height: 55px;
+    // border-bottom: 0.1rem solid rgba(235, 235, 235, 0.55);
+    .catsp1 {
+      color: #777;
+      strong {
+        color: color(dark);
+      }
+    }
+  }
+  .pagina {
+    button {
+      margin: 0 8px;
+      color: color(primary);
+      padding: 2px;
+      border: 2px solid rgba(235, 235, 235, 0.55);
+      background-color: white;
+    }
+    .catsp2 {
+      font-size: 18px;
+      color: color(dark);
+      margin: 4px;
+      &.rty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: color(primary);
+        height: 40px;
+        width: 25px;
+        border: 2px solid rgba(235, 235, 235, 0.55);
+      }
+    }
+  }
+}

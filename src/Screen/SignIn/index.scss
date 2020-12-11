@@ -1,0 +1,66 @@
+// /*
+// @import "../../media";
+// @import "../../variable";
+// @import "../../function";
+// phone-only
+// small-phone
+// big_tab
+// tablet-portrait-up
+// tablet-landscape-up
+// smaller-desktop
+// long_desktop
+// desktop-up
+// big-desktop-up
+// longer_desktop
+// @include for-size(tablet-portrait-up) {
+//     display: none;
+//   }
+
+//    background: color(primary);
+//   */
+// @import "../../media";
+// @import "../../variable";
+// @import "../../function";
+// .sign-up {
+//   border: 1px solid #e3e3e3;
+//   width: 400px;
+//   margin: 30px auto;
+//   padding: 20px;
+//   :nth-child(1) {
+//     span {
+//       font-size: 17px;
+//       color: color(dark);
+//     }
+//   }
+//   form {
+//     margin-top: 10px;
+//   }
+// }
+// .in-put {
+//   margin-bottom: 10px;
+//   width: 360px;
+//   height: 40px;
+//   outline: none;
+//   border: 2px solid #e3e3e3;
+//   padding: 5px;
+// }
+// input[type="submit"] {
+//   background: color(primary);
+//   color: white;
+//   border: 1px solid color(primary);
+// }
+
+// .mm {
+//   color: color(dark);
+//   &:hover {
+//     color: color(primary);
+//   }
+// }
+.mn {
+  display: flex;
+  justify-content: flex-end;
+  color: color(dark);
+  &:hover {
+    color: color(primary);
+  }
+}

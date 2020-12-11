@@ -1,0 +1,260 @@
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+
+.dashWrap {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  @include for-size(tablet-portrait-up) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  @include for-size(phone-only) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.my-account-button-wrap {
+  border: 1px solid #cecece;
+  border-bottom: none;
+  margin-right: 40px;
+  height: 780px;
+  @include for-size(tablet-portrait-up) {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+  @include for-size(phone-only) {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .button-Wrap {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    background: white;
+    border-bottom: 1px solid #cecece;
+    @include for-size(tablet-portrait-up) {
+      width: 100%;
+    }
+    @include for-size(phone-only) {
+      width: 100%;
+    }
+    button {
+      display: block;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.dashlo {
+  padding-top: 10px;
+}
+
+/*
+Dashboard wrap
+*/
+.dashboard-content {
+  border: 1px solid #cecece;
+  padding: 25px;
+  width: 80%;
+  @include for-size(tablet-portrait-up) {
+    width: 100%;
+  }
+  @include for-size(phone-only) {
+    width: 100%;
+  }
+}
+.first-one {
+  font-size: 20px;
+  padding-bottom: 4px;
+  width: 100%;
+  margin-bottom: 25px;
+  border-bottom: 1px dashed #cecece;
+}
+
+.active {
+  .button-Wrap {
+    background: color(primary);
+    border: 1px solid color(primary);
+    .dash {
+      fill: white;
+    }
+    button {
+      color: white;
+    }
+    .dashlo {
+      fill: white;
+    }
+  }
+}
+
+/*
+Orders wrap
+*/
+.order-wrap {
+  overflow-x: auto;
+  margin-top: 30px;
+  table {
+    width: 100%;
+    margin: 1px auto;
+    min-width: 500px;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    text-align: center;
+  }
+}
+
+.order-wrap table tr td {
+  height: 60px;
+  vertical-align: center;
+}
+.order-wrap table thead tr {
+  height: 40px;
+  color: white;
+  background: color(primary);
+}
+
+/*
+Payment order
+*/
+.payment {
+  width: 100%;
+  height: 4px;
+  background: color(primary);
+  margin-bottom: 15px;
+}
+
+/*Billing Address*/
+.billAddress {
+  span {
+    display: flex;
+  }
+  :nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  :nth-child(3) {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+.upon {
+  background-color: #f9f9f9;
+  display: block;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 5px;
+  border: 1px solid #d7d7d7;
+  &:focus {
+    background-color: white;
+    outline: none;
+    border: 1px solid color(primary);
+  }
+}
+.bill {
+  display: flex;
+  justify-content: space-between;
+  @include for-size(tablet-portrait-up) {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  @include for-size(phone-only) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .input-div {
+    width: 47%;
+    @include for-size(tablet-portrait-up) {
+      width: 100%;
+    }
+    @include for-size(phone-only) {
+      width: 100%;
+    }
+    .input {
+      // margin-right: 10px;
+    }
+  }
+}
+.address-btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  outline: none;
+  color: white;
+  background: color(primary);
+  border: 2px solid color(primary);
+  padding: 5px;
+}
+.pchan {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.currently-reading {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  @include for-size(tablet-portrait-up) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include for-size(phone-only) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+//AccountWrap
+.AccountWrap {
+  margin: 15px 0;
+  border: 1px solid #ededed;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  width: 400px;
+  @include for-size(tablet-portrait-up) {
+    width: 95%;
+  }
+  @include for-size(phone-only) {
+    width: 95%;
+  }
+  div:nth-child(1) {
+    border-bottom: 1px solid #ededed;
+    font-size: 18px;
+    padding: 15px;
+  }
+  div:nth-child(2) {
+    padding: 15px;
+    span {
+      font-size: 18px;
+    }
+  }
+  div:nth-child(3) {
+    padding: 15px;
+    span {
+      font-size: 20px;
+      color: color(primary);
+    }
+  }
+}
+.navWrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1px auto;
+  @include for-size(tablet-portrait-up) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include for-size(phone-only) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

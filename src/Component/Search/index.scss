@@ -1,0 +1,37 @@
+@import "../../media";
+
+form.example {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  @include for-size(phone-only) {
+    display: none;
+  }
+  input[type="text"] {
+    padding: 10px;
+    height: 50px;
+    font-size: 17px;
+    border: 2px solid #eee;
+    width: 80%;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  button {
+    width: 20%;
+    padding: 0 10px;
+    height: 50px;
+    background: #7eba4d;
+    color: white;
+    font-size: 17px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+  }
+  button:hover {
+    background: #7eba4d;
+  }
+}

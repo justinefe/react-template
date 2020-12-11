@@ -1,0 +1,26 @@
+$colors: (
+  primary: #7eba4d,
+  primary-light: lighten(#005dff, 40%),
+  primary-dark: darken(#005dff, 40%),
+  accent-light: lighten(#fff6bb, 15%),
+  accent: #fff6bb,
+  secondary: #3f5c76,
+  secondary-light: lighten(green, 40%),
+  secondary-dark: darken(green, 40%),
+  tertiary: rgb(238, 238, 238),
+  tertiary-dark: darken(rgb(238, 238, 238), 10%),
+  basic: white,
+  advert: #ffd19f,
+  dark: #555555,
+);
+
+$padding: 20px;
+$borders: 15px;
+$font: "Montserrat", sans-serif;
+$destop: 848px;
+$NavLink: (
+  color: color(primary-dark),
+  font-size: 1.5em,
+  font-weight: bold,
+  text-decoration: none,
+);

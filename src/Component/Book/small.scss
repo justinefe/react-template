@@ -1,0 +1,103 @@
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+
+.small-book-wrap {
+  display: flex;
+  width: 100%;
+  background: none;
+  flex-direction: column;
+
+  .card-wrap-top {
+    position: relative;
+    border-radius: 15px;
+    width: 220px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+
+    img {
+      object-fit: fit;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .card-wrap-bottom {
+    margin: 10px auto;
+    .first {
+      display: block;
+      // font-family: Averta-Semibold;
+      font-size: 18px;
+      color: color(dark);
+      font-weight: bold;
+      width: 100%;
+    }
+    .sec {
+      color: color(dark);
+    }
+    .card-currency {
+      display: flex;
+      align-items: center;
+      .card-currency-sub1 {
+        font-family: "Averta-Semibold";
+        font-size: 12px;
+        color: #7eba4d;
+        font-weight: bold;
+      }
+      .empty {
+        background-color: #7eba4d;
+        font-weight: bold;
+        height: 21px;
+        padding-bottom: 2px;
+        width: 2px;
+        margin: 0 10px;
+      }
+      .card-currency-sub2 {
+        font-family: "Averta-Semibold";
+        font-size: 12px;
+        font-weight: bold;
+        color: #7eba4d;
+      }
+    }
+  }
+}
+.sy {
+  padding-right: 2px;
+}
+.clipPath {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 80px;
+  clip-path: polygon(100% 0, 87% 50%, 100% 100%, 0 100%, 0 0);
+  background: color(primary);
+  span {
+    color: color(basic);
+    margin-left: 10px;
+  }
+}
+.pounds {
+  fill: #7eba4d;
+  padding-right: 3px;
+  padding-top: 4px;
+}
+
+/*
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+phone-only
+small-phone
+big_tab
+tablet-portrait-up
+tablet-landscape-up
+smaller-desktop 
+long_desktop
+desktop-up 
+big-desktop-up
+longer_desktop
+@include for-size(tablet-portrait-up) {
+    display: none;
+  }
+   background: color(primary);
+  */

@@ -1,0 +1,17 @@
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+.add-cart-general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 35px;
+  padding: 0 2%;
+  border: 2px solid color(primary);
+  margin: 1px auto;
+  .d {
+    padding-top: 7px;
+    padding-right: 5px;
+  }
+}

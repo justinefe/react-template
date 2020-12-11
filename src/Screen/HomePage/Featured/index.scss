@@ -1,0 +1,113 @@
+@import "../../../media";
+@import "../../../variable";
+@import "../../../function";
+
+.ft {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  @include for-size(tablet-portrait-up) {
+    // display: none;
+    flex-direction: column;
+  }
+  .advert-left {
+    @include for-size(phone-only) {
+      display: none;
+    }
+    @include for-size(tablet-portrait-up) {
+      display: none;
+    }
+    @include for-size(ttablet-landscape-up) {
+      display: none;
+    }
+    @include for-size(desktop-up) {
+      display: flex;
+    }
+    margin-top: 1%;
+    width: 15%;
+    border-radius: 2%;
+    background: color(advert);
+    height: 80%;
+    text-align: center;
+    h3 {
+      margin-top: 30px;
+    }
+  }
+  .advert-right {
+    @include for-size(phone-only) {
+      display: none;
+    }
+    @include for-size(tablet-portrait-up) {
+      display: none;
+    }
+    @include for-size(tablet-landscape-up) {
+      display: none;
+    }
+    @include for-size(desktop-up) {
+      display: flex;
+    }
+    margin-top: 1%;
+    width: 15%;
+    border-radius: 2%;
+    background: color(advert);
+    height: 80%;
+    text-align: center;
+    h3 {
+      margin-top: 30px;
+      // text-align: center;
+    }
+    // height: 100vh;
+    width: 15%;
+    border-radius: 2%;
+    background: color(advert);
+  }
+}
+.feat {
+  color: color(dark);
+  font-size: 20px;
+  font-weight: bold;
+}
+.c-more {
+  color: color(dark);
+  &:hover {
+    color: color(primary);
+  }
+}
+.ft-main {
+  .ft-top {
+    height: 60px;
+    border-bottom: 0.1rem solid rgba(235, 235, 235, 0.55);
+  }
+  // width: 70%;
+  height: 100%;
+  padding: 0 20px;
+  @include for-size(tablet-portrait-up) {
+    width: 100%;
+  }
+  .book-cards {
+    padding-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+/*
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+phone-only
+small-phone
+big_tab
+tablet-portrait-up
+tablet-landscape-up
+smaller-desktop 
+long_desktop
+desktop-up 
+big-desktop-up
+longer_desktop
+@include for-size(tablet-portrait-up) {
+    display: none;
+  }
+
+   background: color(primary);
+  */

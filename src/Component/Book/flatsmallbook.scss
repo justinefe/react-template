@@ -1,0 +1,104 @@
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+
+.md {
+  display: flex;
+  width: 100%;
+  background: none;
+
+  .card-wrap-top {
+    position: relative;
+    border-radius: 15px;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    object-fit: fit;
+    margin: 1px 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    border-left: 2px solid rgba(235, 235, 235, 0.55);
+    @include for-size(tablet-portrait-up) {
+      margin: 15px 10px;
+    }
+    @include for-size(phone-only) {
+      margin: 15px 10px;
+    }
+    img {
+      object-fit: fit;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .card-wrap-bottom {
+    margin: 10px auto;
+    .first {
+      display: block;
+      font-size: 18px;
+      color: color(dark);
+      font-weight: bold;
+      width: 100%;
+    }
+    .sec {
+      color: color(dark);
+    }
+    .card-currency {
+      display: flex;
+      align-items: center;
+      .card-currency-sub1 {
+        font-size: 12px;
+        color: #7eba4d;
+        font-weight: bold;
+        font-weight: bold;
+      }
+      .empty {
+        background-color: #7eba4d;
+        font-weight: bold;
+        height: 21px;
+        padding-bottom: 2px;
+        width: 2px;
+        margin: 0 10px;
+      }
+      .card-currency-sub2 {
+        font-family: "Averta-Semibold";
+        font-size: 12px;
+        font-weight: bold;
+        color: #7eba4d;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.sy {
+  padding-right: 2px;
+}
+.clipPat {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 60px;
+  clip-path: polygon(100% 0, 87% 50%, 100% 100%, 0 100%, 0 0);
+  background: color(primary);
+  span {
+    color: color(basic);
+    margin-left: 10px;
+  }
+}
+/*
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+phone-only
+small-phone
+big_tab
+tablet-portrait-up
+tablet-landscape-up
+smaller-desktop 
+long_desktop
+desktop-up 
+big-desktop-up
+longer_desktop
+@include for-size(tablet-portrait-up) {
+    display: none;
+  }
+   background: color(primary);
+  */

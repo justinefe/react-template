@@ -1,0 +1,10 @@
+@import "../../media";
+@import "../../variable";
+@import "../../function";
+a {
+  text-decoration: none;
+  color: color(dark);
+}
+a:hover {
+  color: #7eba4d;
+}

@@ -1,0 +1,90 @@
+@import "../../../media";
+@import "../../../variable";
+@import "../../../function";
+.bb {
+  background: white;
+  width: 100%;
+  margin: 100px auto;
+  .ft-main {
+    .ft-top {
+      height: 60px;
+      border-bottom: 0.1rem solid rgba(235, 235, 235, 0.55);
+    }
+    height: 100%;
+    padding: 0 20px;
+    @include for-size(tablet-portrait-up) {
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .best-seller {
+      display: flex;
+      padding: 7px;
+      @include for-size(tablet-portrait-up) {
+        flex-direction: column;
+        width: 100%;
+      }
+      @include for-size(phone) {
+        width: 100%;
+      }
+      .best-seller-left {
+        width: 40%;
+        height: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background: color(primary);
+        position: relative;
+        border-radius: 4px;
+
+        .b2 {
+          height: 400px;
+          background: color(primary);
+          width: 100%;
+          position: relative;
+          &::before {
+            background: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+          }
+          img {
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+          }
+          h2 {
+            color: white;
+            font-size: 30px;
+            font-style: italic;
+          }
+          p {
+            font-size: 25px;
+            color: white;
+            font-style: italic;
+            line-height: 35px;
+          }
+        }
+        @include for-size(tablet-portrait-up) {
+          width: 100%;
+          margin: 9px auto;
+        }
+      }
+      .best-sell {
+        display: grid;
+        margin-left: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        @include for-size(tablet-portrait-up) {
+          grid-template-columns: repeat(2, 1fr);
+          margin-left: 0px;
+        }
+        @include for-size(phone-only) {
+          grid-template-columns: repeat(1, 1fr);
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

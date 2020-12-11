@@ -1,0 +1,39 @@
+@import "../../../media";
+@import "../../../variable";
+@import "../../../function";
+
+.aboutInfoWrap {
+  margin: 60px auto;
+  display: flex;
+  @include for-size(tablet-portrait-up) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include for-size(phone-only) {
+    flex-direction: column;
+  }
+  .infoConCard {
+    @include for-size(phone-only) {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    @include for-size(tablet-portrait-up) {
+      margin: 15px;
+    }
+    border: 2px solid #e5e5e5;
+    padding: 15px;
+    width: 260px;
+    height: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    :nth-child(2) {
+      display: block;
+      :nth-child(1) {
+        font-family: " Averta-Semibold";
+        font-size: 17px;
+      }
+    }
+  }
+}
+.i-svg {
+  fill: color(primary);
+}
